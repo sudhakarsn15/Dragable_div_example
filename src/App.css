@@ -20,6 +20,17 @@
   color: #45597e;
 }
 
+.todo1 {
+  position: absolute;
+  width: 150px;
+  height: 90vh;
+  left: 150px;
+  top: 10;
+  background-color: #fbf2ed;
+  border-style: solid;
+  border-width: 2px;
+  color: #45597e;
+}
 .header {
   display: inline-block;
   color: #45597e;

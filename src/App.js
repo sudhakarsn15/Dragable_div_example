@@ -32,6 +32,7 @@ export default class AppDragDropDemo extends Component {
   render() {
     var tasks = {
       todo: [],
+      inwork: [],
       done: []
     };
 
@@ -60,6 +61,15 @@ export default class AppDragDropDemo extends Component {
           <span className="task-header">To-Do List</span>
           {tasks.todo}
         </div>
+        <div
+          className="todo1"
+          onDragOver={(ev) => this.onDragOver(ev)}
+          onDrop={(e) => this.onDrop(e, "inwork")}
+        >
+          <span className="task-header">In-Work</span>
+          {tasks.inwork}
+        </div>
+
         <div
           className="droppable"
           onDragOver={(ev) => this.onDragOver(ev)}
